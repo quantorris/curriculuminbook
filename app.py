@@ -6,7 +6,7 @@ import streamlit as st
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"]) 
 
 # Initialise the free and fast Flash model
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 def extract_text(pdf_file):
     # Read the PDF directly from the uploaded file stream
